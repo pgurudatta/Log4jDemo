@@ -5,13 +5,21 @@ package com.fortinet.consult.test;
 import java.awt.*;  
 import java.awt.event.*;  
 import javax.swing.*;  
-  
+
+import org.apache.log4j.Logger;
+
+import java.io.*;
+import java.sql.SQLException;
+import java.util.*;
+
 class OnlineTest extends JFrame implements ActionListener  
 {  
-    JLabel l;  
+	static Logger log = Logger.getLogger(OnlineTest.class);
+	
+	JLabel l;  
     JRadioButton jb[]=new JRadioButton[5];  
     JButton b1,b2;  
-    ButtonGroup bg;  
+    ButtonGroup bg; 
     int count=0,current=0,x=1,y=1,now=0;  
     int m[]=new int[10];      
     OnlineTest(String s)  
@@ -184,7 +192,8 @@ class OnlineTest extends JFrame implements ActionListener
     }  
     public static void main(String s[])  
     {  
-        new OnlineTest("Online Test Of Java");  
+    	log.debug( "Initializing your online test..." );
+    	new OnlineTest("Online Test Of Java");  
     }  
 }  
 
