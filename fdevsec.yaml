@@ -3,12 +3,18 @@ version: v1
 id:
   org: 7cdd97bf-767f-4dec-a9cc-4a4da8767ae4
   app: d7b8511e-3564-4bce-a293-da16b62de998
-        # Optional parameters.
-        # scanners:
-        # - sast
+        
+scanners:
+- sast
+- sca
+  #- secret
+  #- dast
+    # Optional parameters.
+        #scanners:
+      #- sast
         # - dast
         # - secret
-        # - sca
+        #- sca
         #
         # languages:
         # - python
