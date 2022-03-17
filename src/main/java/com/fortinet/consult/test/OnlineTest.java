@@ -6,7 +6,8 @@ import java.awt.*;
 import java.awt.event.*;  
 import javax.swing.*;  
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.*;
 import java.sql.SQLException;
@@ -14,7 +15,7 @@ import java.util.*;
 
 class OnlineTest extends JFrame implements ActionListener  
 {  
-	static Logger log = Logger.getLogger(OnlineTest.class);
+	static final Logger log = LogManager.getLogger(OnlineTest.class);
 	
 	JLabel l;  
     JRadioButton jb[]=new JRadioButton[5];  
