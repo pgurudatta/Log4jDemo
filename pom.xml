@@ -26,8 +26,8 @@
       <version>2.13.0</version>
      </dependency>		
 	<dependency>    
-      <groupId>de.sfuhrm</groupId>    
-      <artifactId>openssl4j</artifactId>    
+      <groupId>org.wildfly.core</groupId>    
+      <artifactId>wildfly-core-feature-pack</artifactId>    
       <version>3.0.2</version>
 	</dependency>
     <dependency>
